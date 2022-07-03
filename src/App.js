@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import './App.css';
 
 import { Board } from "./components/Board";
+import { ResetButton } from './components/ResetButton';
 import { Scoreboard } from './components/Scoreboard';
 
 function App() {
@@ -71,6 +72,7 @@ function App() {
     <div className="App">
       <Scoreboard scores={scores} xPlaying={xPlaying}/>
       <Board board={board} onClick={gameOver ? resetBoard : handleBoxClick}/>
+      <ResetButton resetBoard={resetBoard}/>
     </div>
   );
 }
