@@ -7,3 +7,9 @@
   background-color: #efefef;
   font-family: "Fredoka", sans-serif;
 }
+
+@media only screen and (max-width: 768px) {
+  .body {
+    border-radius: 5px solid red;
+  }
+}
